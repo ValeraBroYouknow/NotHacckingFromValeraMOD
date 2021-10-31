@@ -8,23 +8,16 @@ snm = {"Instagram": "instagram.com/", "VK": "vk.com/", "Twitter": "twitter.com/"
 
 
 
-vh = {"YouTube": "youtube.com/user/", 
+sites = {"YouTube": "youtube.com/user/", 
 "Twitch": "twitch.tv/", "Pornhub": "rt.pornhub.com/users/", "Red Tube": "ru.redtube.com/users/", "Xvideos": "www.xvideos.com/profiles/"}
-
 
 
 games = {"Steam": "steamcommunity.com/id/", "Ubisoft": "club.ubisoft.com/profile/", 
 "Chess": "www.chess.com/ru/member/", "Xbox": "account.xbox.com/profile?gamertag=", "Warface": "wfts.su/profile/",
 "Faceit": "www.faceit.com/ru/players/"}
 
-
-money = {"DonationAlerts": "www.donationalerts.com/r", "Qiwi": "qiwi.me/", "PayPal": "paypal.me/"}
-
-forums = {"Anime planet": "anime-planet.com/users/", "Linux": "www.linux.org/members/", 
-"Bitcoinforum": "bitcoinforum.com/profile/", "Scala lang": "users.scala-lang.org/u/",
- "Pikabu": "pikabu.ru/@", "Signalusers": "community.signalusers.org/u/"
-
-}
+forums = {"Anime planet": "anime-planet.com/users/", "Bitcoinforum": "bitcoinforum.com/profile/", "Scala lang": "users.scala-lang.org/u/",
+ "Pikabu": "pikabu.ru/@", "Signalusers": "community.signalusers.org/u/"}
 
 
 
