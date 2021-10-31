@@ -173,31 +173,6 @@ while True:
         os.system('clear')
         print(decor.sher_menu)
         vari = input(f"{decor.lye}[MODmaNdontknowbutye/main/carNphone/category] >> {decor.res}")
-
-        if vari == "2":
-            car_num = input(f"{decor.lye}Enter Car Number(а111аа77) >> ")
-            try:
-                car_nums = car_num.upper()
-                nc = car_num.lower()
-                numb_car = nc[:6] + '.' + nc[6:]
-                a_h=requests.get("https://авто-история.рф/num/"+car_nums+"/")
-                km=requests.get("https://www.230km.ru/"+numb_car+".nomer")
-                an=requests.get("http://avto-nomer.ru/ru/gallery.php?fastsearch="+nc)
-                if a_h:
-                    print("https://авто-история.рф/num/"+car_nums+"/")
-
-                    if km:
-                        print("https://www.230km.ru/"+numb_car+".nomer")
-                    else:
-                        print(f"{decor.lre}[no result]")
-                else:
-                    print(f"{decor.lre}[no result]")
-                if len(nc)<8:
-                    print(f"{decor.lre}[no result]")
-                else:
-                    print("http://avto-nomer.ru/ru/gallery.php?fastsearch="+nc)
-            except:
-                print(f"{decor.lre}[no result]")
         elif vari == "1":
             phone = input(f"{decor.lye}Enter Phone Number >> ")
             getInfo = "https://htmlweb.ru/geo/api.php?json&telcod=" + phone
