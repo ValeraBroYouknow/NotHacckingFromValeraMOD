@@ -1,5 +1,5 @@
 import requests
-from Core import nickF
+from Core import fornicks
 from Core import decor
 import os, sys
 from Core import ts
@@ -33,33 +33,33 @@ while True:
         os.system('cls')
         nick = input(f"{decor.lye}Enter Nickname >> ")
         print(f"{decor.lye} Messeagers and Soical Networks:")
-        nickF.osint(nickF.snm, nick)
+        fornicks.osint(fornicks.snm, nick)
         print(f"{decor.lye} Videohostings:")
-        nickF.osint(nickF.vh, nick)
+        fornicks.osint(fornicks.vh, nick)
         print(f"{decor.lye} Games:")
-        nickF.osint(nickF.games, nick)
+        fornicks.osint(fornicks.games, nick)
         print(f"{decor.lye} Forums:")
-        nickF.osint(nickF.forums, nick)
+        fornicks.osint(fornicks.forums, nick)
         print(f"{decor.lye} Wallets:")
-        nickF.osint(nickF.money, nick)
+        fornicks.osint(fornicks.money, nick)
         print(f"{decor.lye} Other:")
-        nickF.osint(nickF.other, nick)
+        fornicks.osint(fornicks.other, nick)
         continue
     elif ans == 1 and system == 2:
         os.system('clear')
         nick = input(f"{decor.lye}Enter Nickname >> ")
         print(f"{decor.lye} Messeagers and Soical Networks:")
-        nickF.osint(nickF.snm, nick)
+        fornicks.osint(fornicks.snm, nick)
         print(f"{decor.lye} Videohostings:")
-        nickF.osint(nickF.vh, nick)
+        fornicks.osint(fornicks.vh, nick)
         print(f"{decor.lye} Games:")
-        nickF.osint(nickF.games, nick)
+        fornicks.osint(fornicks.games, nick)
         print(f"{decor.lye} Forums:")
-        nickF.osint(nickF.forums, nick)
+        fornicks.osint(fornicks.forums, nick)
         print(f"{decor.lye} Wallets:")
-        nickF.osint(nickF.money, nick)
+        fornicks.osint(fornicks.money, nick)
         print(f"{decor.lye} Other:")
-        nickF.osint(nickF.other, nick)
+        fornicks.osint(fornicks.other, nick)
         continue
     elif ans == 4:
         break
@@ -80,7 +80,7 @@ while True:
                    headers=ts.headers)
         soup = BeautifulSoup(page.content, "html.parser")
         table = soup.find(class_="table").find("tbody")
-        torrents = table.find_all("tr")
+        
         output = PrettyTable(["Name", "Category", "Size", "First seen", "Last seen"])
         for torrent in torrents:
             first, last = torrent.find_all(class_="date-column")
@@ -124,41 +124,7 @@ while True:
     elif ans == 3 and system == 1:
         os.system('cls')
         print(decor.sher_menu)
-        vari = input(f"{decor.lye}[MODmaNdontknowbutye/main/carNphone/category] >> {decor.res}")
-
-        if vari == "2":
-            car_num = input(f"{decor.lye}Enter Car Number(а111аа77) >> ")
-            try:
-                car_nums = car_num.upper()
-                nc = car_num.lower()
-                numb_car = nc[:6] + '.' + nc[6:]
-                a_h=requests.get("https://авто-история.рф/num/"+car_nums+"/")
-                km=requests.get("https://www.230km.ru/"+numb_car+".nomer")
-                an=requests.get("http://avto-nomer.ru/ru/gallery.php?fastsearch="+nc)
-                if a_h:
-                    print("https://авто-история.рф/num/"+car_nums+"/")
-
-                    if km:
-                        print("https://www.230km.ru/"+numb_car+".nomer")
-                    else:
-                        print(f"{decor.lre}[no result]")
-                else:
-                    print(f"{decor.lre}[no result]")
-                if len(nc)<8:
-                    print(f"{decor.lre}[no result]")
-                else:
-                    print("http://avto-nomer.ru/ru/gallery.php?fastsearch="+nc)
-            except:
-                print(f"{decor.lre}[no result]")
-        elif vari == "1":
-            phone = input(f"{decor.lre}Enter Phone Number >> ")
-            getInfo = "https://htmlweb.ru/geo/api.php?json&telcod=" + phone
-            try:
-                infoPhones = urllib.request.urlopen( getInfo )
-            except:
-                print(f"{decor.lre}[no result]")
-            infoPhone = json.load( infoPhones )
-
+        vari = input(f"{decor.lye}[MODmaNdontknowbutye/main/lolahahahaah/category] >> {decor.res}")
             try:
                 print(decor.lye)
                 print(u"Country >>", infoPhone["country"]["name"])
